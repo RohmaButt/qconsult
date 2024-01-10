@@ -60,6 +60,11 @@ export default function MainFooter() {
             </div>
           </div>
         </div>
+        <div className="row">
+          <div className="footer-h4">
+            © 2023 Qonsult Technologies, All Rights Reserved.
+          </div>
+        </div>
       </div>
     </footer>
   );
