@@ -9,7 +9,7 @@
 body {
   color: #222;
   font-family: system-ui, sans-serif;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 
 .container {
@@ -22,7 +22,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #24262b;
+  background-color: #222;
   transition: all 0.3s ease-in-out;
 }
 

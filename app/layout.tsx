@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main className="flex min-h-screen flex-col justify-between p-6">
+        <main className="flex min-h-screen flex-col justify-between">
           <Navbar />
           {children}
           <MainFooter />

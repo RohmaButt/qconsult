@@ -1,3 +1,5 @@
+//https:codepen.io/animationbro/pen/OJQEVEj
+
 import "./style.css";
 export default function MainFooter() {
   return (
@@ -8,47 +10,35 @@ export default function MainFooter() {
             <h4>company</h4>
             <ul>
               <li>
-                <a href="#">about us</a>
+                <a href="/about">about us</a>
               </li>
               <li>
-                <a href="#">our services</a>
+                <a href="/services">our services</a>
               </li>
               <li>
-                <a href="#">privacy policy</a>
-              </li>
-              <li>
-                <a href="#">affiliate program</a>
+                <a href="/contact">Contact us</a>
               </li>
             </ul>
           </div>
           <div className="footer-col">
-            <h4>get help</h4>
+            <h4>quick links</h4>
             <ul>
               <li>
-                <a href="#">FAQ</a>
+                <a href="/careers">Careers</a>
               </li>
               <li>
-                <a href="#">shipping</a>
-              </li>
-              <li>
-                <a href="#">returns</a>
+                <a href="/portfolio">Portfolio</a>
               </li>
             </ul>
           </div>
           <div className="footer-col">
-            <h4>online shop</h4>
+            <h4>our Offices</h4>
             <ul>
               <li>
-                <a href="#">watch</a>
+                <a href="#">Lahore</a>
               </li>
               <li>
-                <a href="#">bag</a>
-              </li>
-              <li>
-                <a href="#">shoes</a>
-              </li>
-              <li>
-                <a href="#">dress</a>
+                <a href="#">Islamabad</a>
               </li>
             </ul>
           </div>

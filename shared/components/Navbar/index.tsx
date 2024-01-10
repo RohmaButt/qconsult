@@ -1,3 +1,5 @@
+//https://codepen.io/amal84/pen/vYPNqbO
+
 import Image from "next/image";
 import "./style.css";
 
@@ -17,33 +19,21 @@ export default function Navbar() {
     <>
       <nav className="nav">
         <div className="container">
-          {/* <h1 className="logo"> */}
-          <a
-            href="https://example.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="Images/logos/logo_black.png"
-              width={90}
-              height="auto"
-              alt="Description of the image"
-            />
-          </a>
-          {/* </h1> */}
-
+          <h1 className="logo">
+            <a href="/">Qonsult</a>
+          </h1>
           <ul>
             <li>
-              <a href="# current">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="/about">About</a>
             </li>
             <li>
-              <a href="#">Services</a>
+              <a href="/services">Services</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="/contact">Contact</a>
             </li>
           </ul>
         </div>
