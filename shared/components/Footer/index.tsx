@@ -1,7 +1,7 @@
 //https:codepen.io/animationbro/pen/OJQEVEj
 
 import "./style.css";
-export default function MainFooter() {
+export default function Footer() {
   return (
     <footer className="footer">
       <div className="container">

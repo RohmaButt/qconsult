@@ -1,6 +1,8 @@
 //https://codepen.io/amal84/pen/vYPNqbO
 
 import Image from "next/image";
+import img0 from "@/public/Images/logos/logo_black_svg.svg";
+
 import "./style.css";
 
 export default function Navbar() {
@@ -20,7 +22,9 @@ export default function Navbar() {
       <nav className="nav">
         <div className="container">
           <h1 className="logo">
-            <a href="/">Qonsult</a>
+            <a href="/">
+              <Image src={img0} alt="logo" width={30} height={40} />
+            </a>
           </h1>
           <ul>
             <li>

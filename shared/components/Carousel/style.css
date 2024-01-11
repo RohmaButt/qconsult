@@ -1,126 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap");
 * {
-  padding: 0px;
   margin: 0;
-  box-sizing: border-box;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Chakra Petch", sans-serif;
 }
-body {
-  padding: 20px;
-  background: #333;
-}
-.h1-title {
-  text-align: center;
-  padding-bottom: 20px;
-  color: #fff;
-}
-.slides {
-  width: 609px;
-  margin: 0 auto;
-  position: relative;
-  display: block;
-}
-.slides input {
-  display: none;
-}
-
-.slide-container {
-  display: block;
-}
-
-.slide {
+.banner1,
+.banner2,
+.banner3 {
+  width: 100%;
+  position: absolute;
+  left: 0;
   top: 0;
-  opacity: 0;
-  display: block;
-  position: absolute;
-  transform: scale(0);
-  transition: all 0.7s ease-in-out;
 }
-
-.slide img {
+img {
+  width: 110%;
+  animation: zoom-out 12s linear infinite;
+}
+.text-box {
+  position: absolute;
   width: 100%;
-  height: 100%;
-  display: block;
+  top: 40%;
+  left: 5%;
+  color: white;
+  animation: textUp 12s linear infinite;
 }
-
-.nav label {
-  display: none;
+h1 {
+  font-size: 6rem;
+}
+.text-box span {
+  width: 100px;
+  height: 1px;
+  background-color: orange;
   position: absolute;
-  cursor: pointer;
-  color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  margin-top: 29%;
+  left: 0;
 }
 
-.nav label:hover {
-  color: #000;
+.slide1 {
+  animation: fade1 12s linear infinite;
 }
-
-.nav .next {
-  right: 5px;
+.slide2 {
+  animation: fade2 12s linear infinite;
 }
-
-.nav .prev {
-  left: 5px;
+.slide3 {
+  animation: fade3 12s linear infinite;
 }
-
-input:checked + .slide-container .slide {
-  opacity: 1;
-  transform: scale(1);
-  transition: opacity 1s ease-in-out;
+@keyframes fade1 {
+  0% {
+    visibility: visible;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
-
-input:checked + .slide-container .nav label {
-  display: block;
+@keyframes fade2 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: visible;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
 }
-
-.nav-dots {
-  width: 100%;
-  height: 11px;
-  display: block;
-  position: absolute;
-  text-align: center;
-  margin-top: 63%;
+@keyframes fade3 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
 }
-
-.nav-dots .nav-dot {
-  width: 11px;
-  height: 11px;
-  margin: 0 4px;
-  position: relative;
-  border-radius: 100%;
-  display: inline-block;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.nav-dots .nav-dot:hover {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-input#img-1:checked ~ .nav-dots label#img-dot-1,
-input#img-2:checked ~ .nav-dots label#img-dot-2,
-input#img-3:checked ~ .nav-dots label#img-dot-3,
-input#img-4:checked ~ .nav-dots label#img-dot-4,
-input#img-5:checked ~ .nav-dots label#img-dot-5,
-input#img-6:checked ~ .nav-dots label#img-dot-6 {
-  background: rgba(0, 0, 0, 0.8);
-}
-@media screen and (max-width: 609px) {
-  .slides {
+@keyframes zoom-out {
+  100% {
     width: 100%;
   }
 }
-
-.myvideo {
-  text-decoration: none;
-  color: #fff;
-  background: red;
-  text-align: center;
-  padding: 10px;
-  font-weight: 600;
-  z-index: 100;
-  position: absolute;
-  bottom: 20px;
-}
-.myvideo:hover {
-  color: #000;
+@keyframes textUp {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(100px);
+  }
 }

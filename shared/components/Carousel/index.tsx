@@ -1,107 +1,32 @@
 import "./style.css";
+import Image from "next/image";
 export default function Carousel() {
   return (
-    <section id="images-slider">
-      <ul className="slides">
-        <input type="radio" name="radio-btn" id="img-1" checked />
-        <li className="slide-container">
-          <div className="slide">
-            <img src="images/" />
-          </div>
-          <div className="nav">
-            <label htmlFor="img-6" className="prev">
-              <i className="fas fa-chevron-circle-left fa-3x"></i>
-            </label>
-            <label htmlFor="img-2" className="next">
-              <i className="fas fa-chevron-circle-right fa-3x"></i>
-            </label>
-          </div>
-        </li>
-
-        <input type="radio" name="radio-btn" id="img-2" />
-        <li className="slide-container">
-          <div className="slide">
-            <img src="https://picsum.photos/609/421/?random" />
-          </div>
-          <div className="nav">
-            <label htmlFor="img-1" className="prev">
-              <i className="fas fa-chevron-circle-left fa-3x"></i>
-            </label>
-            <label htmlFor="img-3" className="next">
-              <i className="fas fa-chevron-circle-right fa-3x"></i>
-            </label>
-          </div>
-        </li>
-
-        <input type="radio" name="radio-btn" id="img-3" />
-        <li className="slide-container">
-          <div className="slide">
-            <img src="https://picsum.photos/609/422/?random" />
-          </div>
-          <div className="nav">
-            <label htmlFor="img-2" className="prev">
-              <i className="fas fa-chevron-circle-left fa-3x"></i>
-            </label>
-            <label htmlFor="img-4" className="next">
-              <i className="fas fa-chevron-circle-right fa-3x"></i>
-            </label>
-          </div>
-        </li>
-
-        <input type="radio" name="radio-btn" id="img-4" />
-        <li className="slide-container">
-          <div className="slide">
-            <img src="https://picsum.photos/609/423/?random" />
-          </div>
-          <div className="nav">
-            <label htmlFor="img-3" className="prev">
-              <i className="fas fa-chevron-circle-left fa-3x"></i>
-            </label>
-            <label htmlFor="img-5" className="next">
-              <i className="fas fa-chevron-circle-right fa-3x"></i>
-            </label>
-          </div>
-        </li>
-
-        <input type="radio" name="radio-btn" id="img-5" />
-        <li className="slide-container">
-          <div className="slide">
-            <img src="https://picsum.photos/609/424/?random" />
-          </div>
-          <div className="nav">
-            <label htmlFor="img-4" className="prev">
-              <i className="fas fa-chevron-circle-left fa-3x"></i>
-            </label>
-            <label htmlFor="img-6" className="next">
-              <i className="fas fa-chevron-circle-right fa-3x"></i>
-            </label>
-          </div>
-        </li>
-
-        <input type="radio" name="radio-btn" id="img-6" />
-        <li className="slide-container">
-          <div className="slide">
-            <img src="https://picsum.photos/609/425/?random" />
-          </div>
-          <div className="nav">
-            <label htmlFor="img-5" className="prev">
-              <i className="fas fa-chevron-circle-left fa-3x"></i>
-            </label>
-            <label htmlFor="img-1" className="next">
-              <i className="fas fa-chevron-circle-right fa-3x"></i>
-            </label>
-          </div>
-        </li>
-
-        <li className="nav-dots">
-          <label htmlFor="img-1" className="nav-dot" id="img-dot-1"></label>
-          <label htmlFor="img-2" className="nav-dot" id="img-dot-2"></label>
-          <label htmlFor="img-3" className="nav-dot" id="img-dot-3"></label>
-          <label htmlFor="img-4" className="nav-dot" id="img-dot-4"></label>
-          <label htmlFor="img-5" className="nav-dot" id="img-dot-5"></label>
-          <label htmlFor="img-6" className="nav-dot" id="img-dot-6"></label>
-        </li>
-      </ul>
-    </section>
+    <div className="">
+      <div className="banner1 slide1">
+        <img src="https://orgs.gmu.edu/nsa/Mountains.jpg" alt="" />
+        <div className="text-box zoom1">
+          <h1>Nepal</h1>
+        </div>
+      </div>
+      <div className="banner2 slide2">
+        <img
+          src="https://images.unsplash.com/photo-1485738422979-f5c462d49f74?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNhfGVufDB8fDB8fHww&w=1000&q=80"
+          alt=""
+        />
+        <div className="text-box zoom2">
+          <h1>United States</h1>
+        </div>
+      </div>
+      <div className="banner3 slide3">
+        <img
+          src="https://media.cnn.com/api/v1/images/stellar/prod/230324090551-01-visiting-france-during-protests-what-to-know-top.jpg?c=16x9&q=h_720,w_1280,c_fill"
+          alt=""
+        />
+        <div className="text-box zoom3">
+          <h1>France</h1>
+        </div>
+      </div>
+    </div>
   );
 }
