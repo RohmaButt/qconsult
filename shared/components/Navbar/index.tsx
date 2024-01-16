@@ -20,11 +20,11 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <div className="container">
-        <h1 className="logo">
-          <a href="/">
-            <Image src={img0} alt="logo" width={30} height={40} />
-          </a>
-        </h1>
+        {/* <h1 className="logo"> */}
+        <a href="/">
+          <Image src={img0} alt="logo" width={30} height={40} />
+        </a>
+        {/* </h1> */}
         <ul>
           <li>
             <a href="/">Home</a>

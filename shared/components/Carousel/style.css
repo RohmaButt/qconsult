@@ -2,10 +2,10 @@
 * {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  /* height: 100vh;
   width: 100%;
-  /* overflow: hidden; */
-  font-family: "Chakra Petch", sans-serif;
+ overflow: hidden; 
+  font-family: "Chakra Petch", sans-serif;*/
 }
 .banner1,
 .banner2,
@@ -15,8 +15,9 @@
   left: 0;
   top: 0;
 }
-img {
+.carousel-img {
   width: 110%;
+  height: 500px;
   animation: zoom-out 12s linear infinite;
 }
 .text-box {
@@ -27,9 +28,9 @@ img {
   color: white;
   animation: textUp 12s linear infinite;
 }
-h1 {
+/* h1 {
   font-size: 6rem;
-}
+} */
 .text-box span {
   width: 100px;
   height: 1px;

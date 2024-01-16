@@ -10,8 +10,7 @@ const Main = () => {
   return (
     <>
       <section className="container content">
-        {/*   <Carousel />*/}
-        <Consulting />
+        <Carousel />
       </section>
       <section className="container content">
         <CardsBox />
