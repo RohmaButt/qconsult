@@ -1,12 +1,18 @@
 import CardsBox from "../CardsBox";
+import Carousel from "../Carousel";
 import Consulting from "../Consulting";
+import Footer from "../Footer";
+import MainWrapper from "../MainWrapper";
 import Mission from "../Mission";
+import Navbar from "../Navbar";
 
-export default function Main() {
+const Main = () => {
   return (
     <>
-      {/* <Carousel /> */}
-      <Consulting />
+      <section className="container content">
+        {/*   <Carousel />*/}
+        <Consulting />
+      </section>
       <section className="container content">
         <CardsBox />
       </section>
@@ -15,4 +21,6 @@ export default function Main() {
       </section>
     </>
   );
-}
+};
+
+export default Main;

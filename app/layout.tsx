@@ -20,9 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <main className="flex min-h-screen flex-col justify-between">
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
+          {children}
         </main>
       </body>
     </html>

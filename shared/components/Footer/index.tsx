@@ -4,8 +4,8 @@ import "./style.css";
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="container">
-        <div className="row">
+      <div className="footer-container">
+        <div className="footer-row">
           <div className="footer-col">
             <h4>company</h4>
             <ul>
@@ -60,7 +60,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="footer-row">
           <div className="footer-h4">
             © 2023 Qonsult Technologies, All Rights Reserved.
           </div>

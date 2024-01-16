@@ -1,6 +1,10 @@
+// "use client";
 import Main from "@/shared/components/Main";
+import MainWrapper from "@/shared/components/MainWrapper";
 import { Component } from "react";
 
-export default function Home() {
+const Home = () => {
   return <Main />;
-}
+};
+
+export default MainWrapper(Home);

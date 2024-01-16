@@ -1,5 +1,7 @@
+import MainWrapper from "@/shared/components/MainWrapper";
+
 const Careers = () => {
   return <div>Careers</div>;
 };
 
-export default Careers;
+export default MainWrapper(Careers);

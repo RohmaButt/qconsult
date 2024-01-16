@@ -1,5 +1,7 @@
-const contact = () => {
+import MainWrapper from "@/shared/components/MainWrapper";
+
+const Contact = () => {
   return <div>contact</div>;
 };
 
-export default contact;
+export default MainWrapper(Contact);

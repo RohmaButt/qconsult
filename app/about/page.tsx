@@ -1,5 +1,7 @@
-const about = () => {
+import MainWrapper from "@/shared/components/MainWrapper";
+
+const About = () => {
   return <div>about</div>;
 };
 
-export default about;
+export default MainWrapper(About);

@@ -2,7 +2,7 @@ import "./style.css";
 
 export default function Consulting() {
   return (
-    <div className="hero">
+    <div className="consulting">
       <div className="container">
         <div className="line">
           <h1 className="lineUp">
