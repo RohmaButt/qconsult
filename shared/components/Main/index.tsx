@@ -8,8 +8,8 @@ import Navbar from "../Navbar";
 
 const Main = () => {
   return (
-    <>
-      <section className="container content">
+    <div className="d-flex flex-column">
+      <section>
         <Carousel />
       </section>
       <section className="container content">
@@ -18,7 +18,7 @@ const Main = () => {
       <section className="container content">
         <Mission />
       </section>
-    </>
+    </div>
   );
 };
 

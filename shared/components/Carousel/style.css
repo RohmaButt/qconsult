@@ -2,41 +2,22 @@
 * {
   margin: 0;
   padding: 0;
-  /* height: 100vh;
-  width: 100%;
- overflow: hidden; 
-  font-family: "Chakra Petch", sans-serif;*/
+}
+.carousel {
+  /* position: absolute; */
 }
 .banner1,
 .banner2,
 .banner3 {
   width: 100%;
-  position: absolute;
+  /* position: relative; */
   left: 0;
   top: 0;
 }
 .carousel-img {
   width: 110%;
-  height: 500px;
+  height: 100vh;
   animation: zoom-out 12s linear infinite;
-}
-.text-box {
-  position: absolute;
-  width: 100%;
-  top: 40%;
-  left: 5%;
-  color: white;
-  animation: textUp 12s linear infinite;
-}
-/* h1 {
-  font-size: 6rem;
-} */
-.text-box span {
-  width: 100px;
-  height: 1px;
-  background-color: orange;
-  position: absolute;
-  left: 0;
 }
 
 .slide1 {

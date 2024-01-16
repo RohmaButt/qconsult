@@ -13,7 +13,7 @@ export default function () {
           deliver more accurate insights.
         </div>
         <div className="flex flexcardImg">
-          <a className="flex flexcardImg href" href="/about">
+          <a className="flex flexcardImg href" href="/consulting-and-advisory">
             Read More
           </a>
         </div>
@@ -32,7 +32,7 @@ export default function () {
           external, unstructured and environmental data.
         </div>
         <div className="flex flexcardImg">
-          <a className="flex flexcardImg href" href="/about">
+          <a className="flex flexcardImg href" href="/data-analytics">
             Read More
           </a>
         </div>
@@ -47,7 +47,7 @@ export default function () {
           operations, and lifecycle development responsibility.
         </div>
         <div className="flex flexcardImg">
-          <a className="flex flexcardImg href" href="/about">
+          <a className="flex flexcardImg href" href="/managed-services">
             Read More
           </a>
         </div>
@@ -64,7 +64,7 @@ export default function () {
           designing for organizations.
         </div>
         <div className="flex flexcardImg">
-          <a className="flex flexcardImg href" href="/about">
+          <a className="flex flexcardImg href" href="/advanced-analytics">
             Read More
           </a>
         </div>
