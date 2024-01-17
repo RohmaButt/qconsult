@@ -15,7 +15,7 @@ const Main = () => {
       <section className="container content">
         <CardsBox />
       </section>
-      <section className="container content">
+      <section>
         <Mission />
       </section>
     </div>
