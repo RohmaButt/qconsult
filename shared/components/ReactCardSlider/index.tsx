@@ -8,7 +8,13 @@ export default function () {
   return (
     <div className="container">
       <div className="slider-wrapper">
-        <div className="img1" />
+        <div className="img1">
+          <div className="line">
+            <h1 className="lineUp">
+              Consulting <br />
+            </h1>
+          </div>
+        </div>
         <div className="img2" />
         <div className="img3" />
         <div className="img4" />

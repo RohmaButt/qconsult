@@ -22,9 +22,10 @@ container {
 .slider-wrapper {
   width: 400%;
   display: flex;
-  animation: slide 40s linear infinite; /* 4 images x 10 seconds each */
+  animation: slide 120s linear infinite; /* 4 images x 10 seconds each */
   margin-top: 74rem;
   overflow: hidden;
+  cursor: grab;
 }
 
 @keyframes slide {
@@ -108,3 +109,34 @@ container {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 } */
+
+/* crops animations that exceeds one line area */
+.line {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: large;
+  font-weight: 400;
+}
+
+/* lineup class and keyframes */
+.lineUp {
+  animation: 2s anim-lineUp ease-out infinite;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
