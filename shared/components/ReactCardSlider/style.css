@@ -22,7 +22,7 @@ container {
 .slider-wrapper {
   width: 400%;
   display: flex;
-  animation: slide 16s infinite;
+  animation: slide 40s linear infinite; /* 4 images x 10 seconds each */
   margin-top: 74rem;
   overflow: hidden;
 }
@@ -32,19 +32,9 @@ container {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
-  }
-  200% {
-    transform: translateX(-200%);
-  }
-  300% {
-    transform: translateX(-300%);
-  }
-  400% {
-    transform: translateX(-400%);
-  }
-  0% {
-    transform: translateX(0%);
+    transform: translateX(
+      -100%
+    ); /* Move the entire width of the container to the left */
   }
 }
 
