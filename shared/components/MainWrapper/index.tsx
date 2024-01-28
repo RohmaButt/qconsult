@@ -5,6 +5,7 @@ const MainWrapper = (BaseComponent: any) => () =>
   (
     <>
       <Navbar />
+      {/* <Breadcrums /> */}
       <BaseComponent />
       <Footer />
     </>

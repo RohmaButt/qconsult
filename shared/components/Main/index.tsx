@@ -5,14 +5,15 @@ import Footer from "../Footer";
 import MainWrapper from "../MainWrapper";
 import Mission from "../Mission";
 import Navbar from "../Navbar";
+import ReactCardSlider from "../ReactCardSlider";
 
 const Main = () => {
   return (
-    <div className="d-flex flex-column">
+    <div className="">
       <section>
-        <Carousel />
+        <ReactCardSlider />
       </section>
-      <section className="container content">
+      <section>
         <CardsBox />
       </section>
       <section>
