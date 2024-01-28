@@ -15,16 +15,19 @@ export default function Navbar() {
         {/* <Image src={img0} alt="logo" width={60} height={60} /> */}
         <ul>
           <li>
-            <a href="/">Home</a>
+            <a href="/">HOME</a>
           </li>
           <li>
-            <a href="/about">About</a>
+            <a href="/about">ABOUT</a>
           </li>
           <li>
-            <a href="/services">Services</a>
+            <a href="/services">SERVICES</a>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <a href="/blog">BLOG</a>
+          </li>
+          <li>
+            <a href="/contact">CONTACT</a>
           </li>
         </ul>
       </div>
