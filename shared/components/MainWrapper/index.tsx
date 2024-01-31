@@ -1,12 +1,15 @@
 import Footer from "../Footer";
 import Navbar from "../Navbar";
+import "./style.css";
 
 const MainWrapper = (BaseComponent: any) => () =>
   (
     <>
       <Navbar />
       {/* <Breadcrums /> */}
-      <BaseComponent />
+      <div className="center-section">
+        <BaseComponent />
+      </div>
       <Footer />
     </>
   );

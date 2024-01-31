@@ -9,7 +9,7 @@ import ReactCardSlider from "../ReactCardSlider";
 
 const Main = () => {
   return (
-    <div className="">
+    <>
       <section>
         <ReactCardSlider />
       </section>
@@ -19,7 +19,7 @@ const Main = () => {
       <section>
         <Mission />
       </section>
-    </div>
+    </>
   );
 };
 
