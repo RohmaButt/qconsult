@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import "./style.css";
+import Consulting from "../Consulting";
 
 //https://dev.to/shantanu_jana/automatic-image-slideshow-in-html-css-26jl
 //https://codepen.io/fghty/pen/VwWPRwX
@@ -11,17 +12,11 @@ export default function () {
   const showSlides = () => {
     setSlideIndex((prevIndex) => (prevIndex % 3) + 1);
   };
-  // console.log("slideIndex", slideIndex);
 
   useEffect(() => {
-    const intervalId = setInterval(showSlides, 2000);
-    // console.log("slideIndex", slideIndex, showSlides, intervalId);
+    const intervalId = setInterval(showSlides, 4000);
     return () => clearInterval(intervalId);
   }, []);
-
-  useEffect(() => {
-    console.log("slideIndex", slideIndex);
-  }, [slideIndex]);
 
   return (
     <div className="slider-main-container">
@@ -48,7 +43,7 @@ export default function () {
                   display: index != slideIndex ? "none" : "block",
                 }}
               />
-              <div className="text">Caption {index}</div>
+              {/* <Consulting /> */}
             </div>
           ))}
         </div>
