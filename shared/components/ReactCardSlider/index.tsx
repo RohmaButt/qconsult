@@ -10,7 +10,7 @@ export default function () {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const showSlides = () => {
-    setSlideIndex((prevIndex) => (prevIndex % 3) + 1);
+    setSlideIndex((prevIndex) => (prevIndex % 4) + 1);
   };
 
   useEffect(() => {
@@ -22,7 +22,7 @@ export default function () {
     <div className="slider-main-container">
       <div className="slider-wrapper">
         <div className="slideshow-container">
-          {[1, 2, 3].map((index) => (
+          {[1, 2, 3, 4].map((index) => (
             <div
               key={index}
               className={`mySlides fade ${
@@ -35,7 +35,9 @@ export default function () {
                     ? "/Images/images/blackwhite_1.jpg"
                     : index === 2
                     ? "/Images/images/blackwhite_0.jpg"
-                    : "/Images/images/blackwhite_3.webp"
+                    : index === 3
+                    ? "/Images/images/blackwhite_3.webp"
+                    : "/Images/images/blackwhite_4.webp"
                 }`}
                 alt={`Slide ${index}`}
                 style={{
@@ -43,13 +45,19 @@ export default function () {
                   display: index != slideIndex ? "none" : "block",
                 }}
               />
-              {/* <Consulting /> */}
+              {/* {index === 1 ? (
+                <Consulting
+                  title="test"
+                  subTitle="subTitle"
+                  description="description"
+                />
+              ) : null} */}
             </div>
           ))}
         </div>
         <br />
         <div style={{ textAlign: "center" }}>
-          {[1, 2, 3].map((index) => (
+          {[1, 2, 3, 4].map((index) => (
             <span
               key={index}
               className={`dot ${index === slideIndex ? "active" : ""}`}

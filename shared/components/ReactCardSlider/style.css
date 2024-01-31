@@ -5,59 +5,22 @@
 }
 
 .slider-main-container {
-  /* width: 85vmin; */
-  /* position: absolute; */
-  /* transform: translate (-50%, -50%); */
-  /* top: 50%;
-  left: 50%; */
-  /* margin-top: 3.5%; */
   overflow: hidden;
-  /* border: 10px solid #ffffff;
-  border-radius: 8px; */
-  /* box-shadow: 10px 25px 30px rgba (0, 0, 0, 0.3); */
 }
 
 .slideshow-container {
-  /* max-width: 1000px; */
   position: relative;
-  /* margin: auto; */
+}
+
+.mySlides {
+  overflow: hidden;
+  position: relative;
+  background-color: transparent; /* Set container background to transparent */
 }
 
 .slider-wrapper {
-  /* width: 400%;
-  display: flex;
-  animation: slide 120s linear infinite; 4 images x 10 seconds each */
   margin-top: 74rem;
-  /* overflow: hidden; */
   cursor: grab;
-}
-
-.slider-wrapper > img {
-  /* width: 100%; */
-  /* height: 150px; */
-  /* background-image: url("/Images/images/mission01.jpg");
-  height: 60vh; */
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom-center;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin-bottom: 20px; 
-   z-index: -2;   */
-}
-
-.slider-wrapper::before {
-  /* content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1; */
 }
 
 @keyframes slide {
@@ -71,48 +34,42 @@
   }
 }
 
-img {
-  /* background-image: url("/Images/images/blackwhite_0.jpg"); */
+.mySlides > img {
   height: 60vh;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  background-position: bottom-center;
+  background-color: transparent; /* Set container background to transparent */
+
+  /* transition-property: transform;
+  transition-duration: 4s;
+  transition-timing-function: linear;
+  transition-delay: 1s; */
+  /* transform: skewX(30deg) skewY(20deg); */
+  /* display: block; */
+  /* position: absolute; */
+  animation: moveAnimation 100s ease-out;
 }
 
-.img2 {
-  background-image: url("/Images/images/blackwhite_1.jpg");
-  height: 60vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
+@keyframes moveAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
-.img3 {
-  background-image: url("/Images/images/blackwhite_3.webp");
-  height: 60vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
+img:hover {
+  /* transform: scaleX(1.25);
+  display: block; */
+  /* width: 100%; */
+  /* height: auto; */
 }
-
-.img4 {
-  background-image: url("/Images/images/blackwhite_4.webp");
-  height: 60vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-}
-/* 
-.img1::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-} */
 
 /* crops animations that exceeds one line area */
 .line {
