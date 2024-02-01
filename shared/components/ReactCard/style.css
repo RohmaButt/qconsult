@@ -1,25 +1,32 @@
-.consulting {
-}
-
-.consulting::before {
-  /* content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1; */
-}
-
-.consulting h1 {
+.reactcard {
   font-size: 46px;
-  margin: -20px 0 20px;
+  position: relative;
 }
 
-.consulting p {
-  font-size: 20px;
-  letter-spacing: 1px;
+.reactcard-container {
+  position: absolute;
+  margin: -350px 250px;
+  text-align: left;
+}
+
+.reactcard h1 {
+  font-size: 56px;
+  font-weight: bolder;
+  color: #ffff;
+  display: inline-block;
+}
+
+.reactcard p {
+  font-size: 50px;
+  font-weight: bolder;
+  color: #ffff;
+  text-align: left;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+
+.blue-colored-text {
+  color: #00aeef;
 }
 
 /* crops animations that exceeds one line area */
@@ -33,7 +40,7 @@
 
 /* lineup class and keyframes */
 .lineUp {
-  animation: 2s anim-lineUp ease-out infinite;
+  animation: 5s anim-lineUp ease-out infinite;
 }
 @keyframes anim-lineUp {
   0% {

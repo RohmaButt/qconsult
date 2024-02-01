@@ -40,16 +40,9 @@
   background-repeat: no-repeat;
   width: 100%;
   background-position: bottom-center;
-  background-color: transparent; /* Set container background to transparent */
-
-  /* transition-property: transform;
-  transition-duration: 4s;
-  transition-timing-function: linear;
-  transition-delay: 1s; */
-  /* transform: skewX(30deg) skewY(20deg); */
-  /* display: block; */
-  /* position: absolute; */
+  background-color: transparent;
   animation: moveAnimation 100s ease-out;
+  filter: brightness(35%);
 }
 
 @keyframes moveAnimation {
@@ -57,60 +50,11 @@
     transform: translateX(0);
   }
   50% {
-    transform: translateX(100px);
+    transform: translateX(90px);
   }
   100% {
     transform: translateX(0);
   }
-}
-
-img:hover {
-  /* transform: scaleX(1.25);
-  display: block; */
-  /* width: 100%; */
-  /* height: auto; */
-}
-
-/* crops animations that exceeds one line area */
-.line {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: large;
-  font-weight: 400;
-}
-
-/* lineup class and keyframes */
-.lineUp {
-  animation: 2s anim-lineUp ease-out infinite;
-}
-@keyframes anim-lineUp {
-  0% {
-    opacity: 0;
-    transform: translateY(80%);
-  }
-  20% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
 }
 
 /* The dots/bullets/indicators */
