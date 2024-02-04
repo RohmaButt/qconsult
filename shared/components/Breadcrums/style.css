@@ -1,0 +1,35 @@
+.slider-main-container {
+  overflow: hidden;
+  background-color: #fffff0;
+}
+
+.slideshow-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.mySlides {
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-wrapper {
+  margin-top: 74rem;
+  cursor: grab;
+}
+
+.mySlides > img {
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center bottom;
+  filter: brightness(35%);
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}

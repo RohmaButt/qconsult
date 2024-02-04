@@ -6,7 +6,6 @@ const MainWrapper = (BaseComponent: any) => () =>
   (
     <>
       <Navbar />
-      {/* <Breadcrums /> */}
       <div className="center-section">
         <BaseComponent />
       </div>
