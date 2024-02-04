@@ -44,7 +44,7 @@ export default function () {
           {[1, 2, 3, 4].map((index) => (
             <span
               key={index}
-              className={`dot ${index === slideIndex ? "active" : ""}`}
+              className={`slider-dot ${index === slideIndex ? "active" : ""}`}
             ></span>
           ))}
         </div>

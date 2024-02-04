@@ -1,74 +1,45 @@
-import "./style.css";
+import { Card } from "../Card";
 
 export default function () {
   return (
-    <div className="flexbox">
-      <div className="flexcard flexcardGreen">
-        <div className="flex flexcardImg">
-          <img className="flexcardimgItem" src="Images/logos/user.svg" alt="" />
-        </div>
-        <div className="flex flexcardTitle">Consulting & Advisory Services</div>
-        <div className="flex flexcardText">
-          Allowing for data-dependent business processes and applications to
-          deliver more accurate insights.
-        </div>
-        <div className="flex flexcardImg">
-          <a className="flex flexcardImg href" href="/consulting-and-advisory">
-            Read More
-          </a>
-        </div>
+    <>
+      <div className="flexbox">
+        <Card
+          flexcardTitle="Consulting & Advisory"
+          flexcardText="Allowing for data-dependent business processes and applications to
+          deliver more accurate insights."
+          flexcardImgHref="/consulting-and-advisory"
+        />
+        <Card
+          flexcardTitle="Data Analytics"
+          flexcardText="Develop smarter, context-sensitive analytics, which incorporates
+          external, unstructured and environmental data."
+          flexcardImgHref="/data-analytics"
+        />
+        <Card
+          flexcardTitle="Managed Services"
+          flexcardText="We take on your production, database and Analytics platform support,
+          operations, and lifecycle development responsibility."
+          flexcardImgHref="/managed-services"
+        />
       </div>
-      <div className="flexcard flexcardGreen">
-        <div className="flex flexcardImg">
-          <img
-            className="flexcardimgItem"
-            src="Images/logos/cloud-sun.svg"
-            alt=""
-          />
-        </div>
-        <div className="flex flexcardTitle">Data Analytics</div>
-        <div className="flex flexcardText">
-          Develop smarter, context-sensitive analytics, which incorporates
-          external, unstructured and environmental data.
-        </div>
-        <div className="flex flexcardImg">
-          <a className="flex flexcardImg href" href="/data-analytics">
-            Read More
-          </a>
-        </div>
+      <div className="flexbox">
+        <Card
+          flexcardTitle="Software Development"
+          flexcardText=" Development of customized web and mobile solutions to automate business workflows, onboard new users, and manage millions of transactions"
+          flexcardImgHref="/advanced-analytics"
+        />
+        <Card
+          flexcardTitle="Artificial Intelligence"
+          flexcardText="using Artificial Intelligence to power new product features, generate actionable intelligence with automated processes"
+          flexcardImgHref="/advanced-analytics"
+        />
+        <Card
+          flexcardTitle="Cloud DevOps"
+          flexcardText=" Designing state-of-the-art infrastructure to enable best SDLC practices, increase agility, and streamline workflows"
+          flexcardImgHref="/advanced-analytics"
+        />
       </div>
-      <div className="flexcard flexcardGreen">
-        <div className="flex flexcardImg">
-          <img className="flexcardimgItem" src="Images/logos/api.svg" alt="" />
-        </div>
-        <div className="flex flexcardTitle">Managed Services</div>
-        <div className="flex flexcardText">
-          We take on your production, database and Analytics platform support,
-          operations, and lifecycle development responsibility.
-        </div>
-        <div className="flex flexcardImg">
-          <a className="flex flexcardImg href" href="/managed-services">
-            Read More
-          </a>
-        </div>
-      </div>
-      <div className="flexcard flexcardGreen">
-        <div className="flex flexcardImg">
-          <img className="flexcardimgItem" src="Images/logos/tire.svg" alt="" />
-        </div>
-        <div className="flex flexcardTitle">
-          Visualizations and Advance Analytics
-        </div>
-        <div className="flex flexcardText">
-          Our consultants have extensive experience in the analytic dashboard
-          designing for organizations.
-        </div>
-        <div className="flex flexcardImg">
-          <a className="flex flexcardImg href" href="/advanced-analytics">
-            Read More
-          </a>
-        </div>
-      </div>
-    </div>
+    </>
   );
 }

@@ -1,21 +1,16 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .slider-main-container {
   overflow: hidden;
+  background-color: #fffff0;
 }
 
 .slideshow-container {
   position: relative;
+  overflow: hidden;
 }
 
 .mySlides {
   overflow: hidden;
   position: relative;
-  background-color: transparent; /* Set container background to transparent */
 }
 
 .slider-wrapper {
@@ -25,12 +20,10 @@
 
 @keyframes slide {
   0% {
-    transform: translateX(0%);
+    background-color: aqua;
   }
   100% {
-    transform: translateX(
-      -100%
-    ); /* Move the entire width of the container to the left */
+    transform: translateX(-100%);
   }
 }
 
@@ -39,10 +32,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  background-position: bottom-center;
-  background-color: transparent;
-  animation: moveAnimation 100s ease-out;
+  background-position: center bottom;
+  animation: moveAnimation 100s linear infinite;
   filter: brightness(35%);
+  /* object-fit: contain;
+  aspect-ratio: 3/2;
+  mix-blend-mode: color-burn; */
 }
 
 @keyframes moveAnimation {
@@ -51,6 +46,7 @@
   }
   50% {
     transform: translateX(90px);
+    /* background-color: green; */
   }
   100% {
     transform: translateX(0);
@@ -58,7 +54,7 @@
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.slider-dot {
   height: 15px;
   width: 15px;
   margin: 0 2px;

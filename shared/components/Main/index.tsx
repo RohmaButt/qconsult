@@ -1,5 +1,4 @@
 import CardsBox from "../CardsBox";
-import Carousel from "../Carousel";
 import Consulting from "../ReactCard";
 import Footer from "../Footer";
 import MainWrapper from "../MainWrapper";
