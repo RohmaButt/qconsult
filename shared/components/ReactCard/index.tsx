@@ -3,7 +3,7 @@ import React from "react";
 import "./style.css";
 
 interface inputParams {
-  title: string;
+  title?: string;
   subTitle?: string;
   description?: string;
   index: number;

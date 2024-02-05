@@ -27,17 +27,17 @@ export default function () {
         <Card
           flexcardTitle="Software Development"
           flexcardText=" Development of customized web and mobile solutions to automate business workflows, onboard new users, and manage millions of transactions"
-          flexcardImgHref="/advanced-analytics"
+          flexcardImgHref="/software-development"
         />
         <Card
           flexcardTitle="Artificial Intelligence"
           flexcardText="using Artificial Intelligence to power new product features, generate actionable intelligence with automated processes"
-          flexcardImgHref="/advanced-analytics"
+          flexcardImgHref="/artificial-intelligence"
         />
         <Card
           flexcardTitle="Cloud DevOps"
-          flexcardText=" Designing state-of-the-art infrastructure to enable best SDLC practices, increase agility, and streamline workflows"
-          flexcardImgHref="/advanced-analytics"
+          flexcardText="Designing state-of-the-art infrastructure to enable best SDLC practices, increase agility, and streamline workflows"
+          flexcardImgHref="/cloud-devOps"
         />
       </div>
     </>

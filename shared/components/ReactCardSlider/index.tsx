@@ -29,13 +29,7 @@ export default function () {
                 index === slideIndex ? "active" : "inactive"
               }`}
             >
-              <ReactCard
-                title="test"
-                subTitle="subTitle"
-                description="description"
-                index={index}
-                slideIndex={slideIndex}
-              />
+              <ReactCard index={index} slideIndex={slideIndex} />
             </div>
           ))}
         </div>

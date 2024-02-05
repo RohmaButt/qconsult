@@ -18,16 +18,39 @@ export default function Navbar() {
             <a href="/">HOME</a>
           </li>
           <li>
+            <a href="/services">SERVICES</a>
+            <ul className="submenu">
+              <li>
+                <a href="/consulting-and-advisory">Consultancy & Advisory</a>
+              </li>
+              <li>
+                <a href="/data-analytics">Data Analytics</a>
+              </li>
+              <li>
+                <a href="/managed-services">Managed Services</a>
+              </li>
+              <li>
+                <a href="/software-development">Software Development</a>
+              </li>
+              <li>
+                <a href="/artificial-intelligence">Artificial Intelligence</a>
+              </li>
+              <li>
+                <a href="/cloud-devOps">Cloud DevOps</a>
+              </li>
+            </ul>
+          </li>
+          <li>
             <a href="/about">ABOUT</a>
           </li>
           <li>
-            <a href="/services">SERVICES</a>
+            <a href="/careers">CAREERS</a>
           </li>
           <li>
             <a href="/blog">BLOG</a>
           </li>
           <li>
-            <a href="/contact">CONTACT</a>
+            <a href="/contact">CONTACT US</a>
           </li>
         </ul>
       </div>

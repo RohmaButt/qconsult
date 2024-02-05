@@ -1,13 +1,13 @@
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */
 
 body {
-  color: #111;
+  /* color: #111; */
   font-family: "Poppins", sans-serif;
 }
 
@@ -19,6 +19,7 @@ body {
   right: 0;
   background-color: #fffff0;
   /* transition: all 0.3s ease-in-out; */
+  z-index: 2;
 }
 
 .nav .container {
@@ -77,4 +78,71 @@ body {
 .content p {
   line-height: 1.6;
   letter-spacing: 1px;
+}
+
+.submenu {
+  position: absolute;
+  display: none;
+  z-index: 1;
+}
+
+li .submenu {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: start;
+  padding: 10px 10px;
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.submenu > li {
+  padding: 10px 10px;
+  background-color: #c9d6db;
+  width: 270px;
+}
+
+li:hover .submenu {
+  visibility: visible;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 10px 10px;
+  background-color: #c9d6db;
+}
+
+.submenu a {
+  color: black;
+}
+
+.submenu a:hover {
+  text-decoration: none;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Style for the child <ul> with the downward chevron */
+ul li {
+  position: relative;
+}
+
+ul ul::before {
+  content: "\25BC";
+  font-size: 0.8em;
+  display: inline-block;
+  margin-right: 10px;
+  position: absolute;
+  right: 150px;
+  top: -7%;
+  transform: translateY(-60%);
+  visibility: visible;
+}
+
+ul ul:hover::before {
+  color: #00aeef;
 }
