@@ -6,21 +6,27 @@ import "./style.css";
 
 const Breadcrums: React.FunctionComponent<BreadCrumCardProps> = ({
   title,
+  image,
   description0,
   description1,
+  description2,
+  blue_color0,
+  blue_color1,
+  blue_color2,
 }) => {
   return (
-    <div className="slider-main-container">
-      <div className="slider-wrapper">
-        <div className="slideshow-container">
-          <div className="mySlides fade active">
-            <BreadCrumCard
-              title={title}
-              description0={description0}
-              description1={description1}
-            />
-          </div>
-        </div>
+    <div className="breadcrum-wrapper">
+      <div className="slideshow-container">
+        <BreadCrumCard
+          title={title}
+          image={image}
+          description0={description0}
+          description1={description1}
+          description2={description2}
+          blue_color0={blue_color0}
+          blue_color1={blue_color1}
+          blue_color2={blue_color2}
+        />
       </div>
     </div>
   );

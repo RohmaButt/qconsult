@@ -15,28 +15,25 @@ export default function Navbar() {
         {/* <Image src={img0} alt="logo" width={60} height={60} /> */}
         <ul>
           <li>
-            <a href="/">HOME</a>
-          </li>
-          <li>
             <a href="/services">SERVICES</a>
             <ul className="submenu">
               <li>
                 <a href="/consulting-and-advisory">Consultancy & Advisory</a>
               </li>
               <li>
+                <a href="/artificial-intelligence">Artificial Intelligence</a>
+              </li>
+              <li>
                 <a href="/data-analytics">Data Analytics</a>
               </li>
               <li>
-                <a href="/managed-services">Managed Services</a>
+                <a href="/devops">Cloud DevOps</a>
               </li>
               <li>
                 <a href="/software-development">Software Development</a>
               </li>
               <li>
-                <a href="/artificial-intelligence">Artificial Intelligence</a>
-              </li>
-              <li>
-                <a href="/cloud-devOps">Cloud DevOps</a>
+                <a href="/robotics-automation">Robotics Automation</a>
               </li>
             </ul>
           </li>

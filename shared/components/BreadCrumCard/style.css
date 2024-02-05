@@ -26,3 +26,17 @@
 .breadcrum-blue-colored-text {
   color: #00aeef;
 }
+
+.breadcrum-card {
+  overflow: hidden;
+  position: relative;
+}
+
+.breadcrum-card > img {
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center bottom;
+  filter: brightness(35%);
+}
