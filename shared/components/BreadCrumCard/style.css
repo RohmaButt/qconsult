@@ -10,7 +10,7 @@
 }
 
 .breadcrum h1 {
-  font-size: 36px;
+  font-size: larger;
   color: #ffff;
   display: inline-block;
 }
@@ -21,6 +21,7 @@
   text-align: left;
   display: inline-block;
   letter-spacing: 1.5px;
+  width: 140%;
 }
 
 .breadcrum-blue-colored-text {

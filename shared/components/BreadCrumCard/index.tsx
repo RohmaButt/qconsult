@@ -13,12 +13,7 @@ const BreadCrumCard: React.FunctionComponent<BreadCrumCardProps> = ({
   blue_color2,
 }) => (
   <div className="breadcrum-card">
-    <img
-      src={image}
-      style={{
-        width: "100%",
-      }}
-    />
+    <img alt="" src={image} />
     <div className="breadcrum">
       <div className="breadcrum-container">
         <h1>{title}</h1>
