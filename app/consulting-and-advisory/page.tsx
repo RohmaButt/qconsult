@@ -1,8 +1,6 @@
 import Breadcrums from "@/shared/components/Breadcrums";
-import CardsBox from "@/shared/components/CardsBox";
+import CentralPane from "@/shared/components/CentralPane";
 import MainWrapper from "@/shared/components/MainWrapper";
-import Mission from "@/shared/components/Mission";
-import { faL } from "@fortawesome/free-solid-svg-icons";
 
 const ConsultingAndAdvisory = () => {
   return (
@@ -19,7 +17,7 @@ const ConsultingAndAdvisory = () => {
         />
       </section>
       <section>
-        <CardsBox />
+        <CentralPane />
       </section>
       {/* <section>
         <Mission />

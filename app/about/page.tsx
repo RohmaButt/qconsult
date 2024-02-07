@@ -1,6 +1,7 @@
 import Breadcrums from "@/shared/components/Breadcrums";
-import CardsBox from "@/shared/components/CardsBox";
+import CoreValuesBox from "@/shared/components/CoreValuesBox";
 import MainWrapper from "@/shared/components/MainWrapper";
+import "./style.css";
 
 const About = () => {
   return (
@@ -17,12 +18,12 @@ const About = () => {
           blue_color2={false}
         />
       </section>
-      <section>
-        <CardsBox />
+      <section className="core-values">
+        <h1>Core Values</h1>
       </section>
-      {/* <section>
-        <Mission />
-      </section> */}
+      <section>
+        <CoreValuesBox />
+      </section>
     </>
   );
 };

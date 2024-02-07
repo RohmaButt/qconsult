@@ -1,6 +1,6 @@
 import React from "react";
-import "./style.css";
 import BreadCrumCardProps from "@/shared/types/SharedTypes";
+import "./style.css";
 
 const BreadCrumCard: React.FunctionComponent<BreadCrumCardProps> = ({
   title,
@@ -17,7 +17,6 @@ const BreadCrumCard: React.FunctionComponent<BreadCrumCardProps> = ({
     <div className="breadcrum">
       <div className="breadcrum-container">
         <h1>{title}</h1>
-        <br />
         <p>
           <span
             className={
