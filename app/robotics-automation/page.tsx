@@ -1,5 +1,5 @@
 import Breadcrums from "@/shared/components/Breadcrums";
-import CardsBox from "@/shared/components/CardsBox";
+import StaticCardsBox from "@/shared/components/StaticCardsBox";
 import MainWrapper from "@/shared/components/MainWrapper";
 
 const RoboticsAutomation = () => {
@@ -18,11 +18,8 @@ const RoboticsAutomation = () => {
         />
       </section>
       <section>
-        <CardsBox />
+        <StaticCardsBox />
       </section>
-      {/* <section>
-        <Mission />
-      </section> */}
     </>
   );
 };

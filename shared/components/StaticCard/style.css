@@ -1,0 +1,87 @@
+.static-flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 20px 150px;
+  /* background-color: #fffff0; */
+}
+
+.staticflexcard {
+  /* border: 2px solid #e8e8e8; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 30%;
+  align-items: baseline;
+  height: 220px;
+  border-radius: 20px;
+  flex: 1 1 30%; /* Adjusts the basis to 30% but allows growth and shrink */
+  margin: 10px; /* Adds some space between cards */
+  max-width: calc(
+    33.333% - 20px
+  ); /* Adjusts max-width to fit 3 items per row with margins */
+}
+
+.flexcardTitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  word-wrap: break-word;
+  font-weight: bold;
+  padding: 5px 5px;
+  text-align: left;
+}
+
+.flexcardText {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  padding: 5px 5px;
+  text-align: left;
+  letter-spacing: 0.55px;
+}
+
+.flexcardTitle,
+.flexcardText {
+  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.static-card-flex {
+  display: flex;
+  justify-content: left;
+  margin: 15px 20px;
+}
+
+img.flexcardimgItem {
+  width: 70%;
+  height: 50px;
+  margin: 10px 0px;
+  width: 15%;
+}
+
+/* RESPONSİVE */
+@media only screen and (max-width: 800px) {
+  .staticflexcard {
+    width: 35%;
+    margin-top: 20px;
+  }
+
+  img.flexcardimgItem {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .staticflexcard {
+    width: 70%;
+  }
+}
+
+.container-cardbox {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.staticflexcard > img {
+  align-items: center;
+}
