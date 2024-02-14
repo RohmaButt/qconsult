@@ -1,12 +1,14 @@
 import Breadcrums from "@/shared/components/Breadcrums";
-import CardsBox from "@/shared/components/CardsBox";
 import MainWrapper from "@/shared/components/MainWrapper";
-import "./style.css";
+import ContactCardsBox from "@/shared/components/ContactCardsBox";
+import { SignUp } from "@/shared/components/SignUp";
+import CardsBox from "@/shared/components/CardsBox";
+// import "./style.css";
 
 const Contact = () => {
   return (
     <>
-      <section className="contact-container">
+      <section>
         <Breadcrums
           title="Contact Us"
           image="/Images/images/contact.jpg"
@@ -19,10 +21,13 @@ const Contact = () => {
         />
       </section>
       <section>
-        <CardsBox />
+        <ContactCardsBox />
       </section>
-      {/* <section>
-        <Mission />
+      {/* <section className="parent-container contact-central-container">
+        <p>Q</p>
+        <div className="form-container">
+          <SignUp />
+        </div>
       </section> */}
     </>
   );

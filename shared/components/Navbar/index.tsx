@@ -1,11 +1,14 @@
 //https://codepen.io/amal84/pen/vYPNqbO
-
+"use client";
 import Image from "next/image";
 import img0 from "@/public/Images/logos/qonsult_1.jpeg";
+import { usePathname } from "next/navigation";
 
 import "./style.css";
 
 export default function Navbar() {
+  const route = usePathname();
+
   return (
     <nav className="nav">
       <div className="d-flex flex-row container">

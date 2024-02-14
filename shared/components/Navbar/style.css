@@ -1,13 +1,4 @@
-/* *,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-} */
-
 body {
-  /* color: #111; */
   font-family: "Poppins", sans-serif;
 }
 
@@ -56,7 +47,10 @@ body {
   padding: 10px 0;
 }
 
-.nav a.current,
+.nav a:current {
+  color: red;
+}
+
 .nav a:hover {
   color: #00aeef;
   font-weight: bold;

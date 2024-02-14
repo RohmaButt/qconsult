@@ -12,7 +12,7 @@ export default function () {
         />
         <Card
           flexcardTitle="Artificial Intelligence"
-          flexcardText="using Artificial Intelligence to power new product features, generate actionable intelligence with automated processes"
+          flexcardText="Using Artificial Intelligence to power new product features, generate actionable intelligence with automated processes"
           flexcardImgHref="/artificial-intelligence"
         />
         <Card

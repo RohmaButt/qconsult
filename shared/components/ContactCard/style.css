@@ -1,10 +1,64 @@
+/* .contact-card-flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contactCard {
+  border: 2px solid #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  align-items: center;
+  height: 200px;
+  border-radius: 20px;
+  background: #fffff0;
+  min-width: 200px;
+}
+
+@media only screen and (max-width: 800px) {
+  .contactCard {
+    width: 35%;
+    margin-top: 20px;
+  }
+  img.flexcardimgItem {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contactCard {
+    width: 70%;
+  }
+}
+
+.contactCardTitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  word-wrap: break-word;
+  font-weight: bold;
+  padding: 5px 5px;
+  text-align: left;
+}
+
+.contactCard > a {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #00aeef;
+  padding: 5px 5px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.55px;
+} */
+
 .flexbox {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 100%;
+  width: 140%;
   flex-wrap: wrap;
-  padding: 20px 150px;
+  padding: 20px 20px;
   background-color: #fffff0;
 }
 
@@ -13,15 +67,10 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 30%;
+  width: 33%;
   align-items: baseline;
   height: 220px;
   border-radius: 20px;
-  flex: 1 1 30%; /* Adjusts the basis to 30% but allows growth and shrink */
-  margin: 10px; /* Adds some space between cards */
-  max-width: calc(
-    33.333% - 20px
-  ); /* Adjusts max-width to fit 3 items per row with margins */
 }
 .flexcard:hover {
   background-color: #00aeef;
@@ -42,11 +91,6 @@
   padding: 5px 5px;
   text-align: left;
   letter-spacing: 0.55px;
-}
-
-.flexcardTitle,
-.flexcardText {
-  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .card-flex {
