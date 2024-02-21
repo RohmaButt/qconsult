@@ -1,44 +1,28 @@
-import { Card } from "../Card";
+import { StaticCard } from "../StaticCard";
 
 export default function () {
+  const styles = { backgroundColor: "#f5f5f5" };
+
   return (
-    <>
-      <div className="flex flex-col min-h-screen">
-        <Card
-          flexcardTitle="Consulting & Advisory"
-          flexcardText="Allowing for data-dependent business processes and applications to
-          deliver more accurate insights."
-          flexcardImgHref="/consulting-and-advisory"
-        />
-        <Card
-          flexcardTitle="Artificial Intelligence"
-          flexcardText="Using Artificial Intelligence to power new product features, generate actionable intelligence with automated processes"
-          flexcardImgHref="/artificial-intelligence"
-        />
-        <Card
-          flexcardTitle="Data Analytics"
-          flexcardText="Develop smarter, context-sensitive analytics, which incorporates
-          external, unstructured and environmental data."
-          flexcardImgHref="/data-analytics"
-        />
-      </div>
-      {/* <div className="flexbox">
-        <Card
-          flexcardTitle="Cloud DevOps"
-          flexcardText="Designing state-of-the-art infrastructure to enable best SDLC practices, increase agility, and streamline workflows"
-          flexcardImgHref="/devops"
-        />
-        <Card
-          flexcardTitle="Software Development"
-          flexcardText=" Development of customized web and mobile solutions to automate business workflows, onboard new users, and manage millions of transactions"
-          flexcardImgHref="/software-development"
-        />
-        <Card
-          flexcardTitle="Robotics Process Automation"
-          flexcardText="Building robotic processes to automate routine activities such as customer onboarding, KYC, order processing and more."
-          flexcardImgHref="/robotics-automation"
-        />
-      </div> */}
-    </>
+    <div className="flexbox-images-card">
+      <StaticCard
+        flexcardTitle="Automate processes"
+        flexcardText="Automate AI-powered processes to optimize your business processes, improve efficiency and reduce costs."
+        styles={styles}
+        flexcardImg="/Images/icons/crystal-ball-2.png"
+      />
+      <StaticCard
+        flexcardTitle="Predictive analytics"
+        flexcardText="Apply AI algorithms to analyze data and make predictive assessments on future trends to boost your businesses performance."
+        styles={styles}
+        flexcardImg="/Images/icons/idea-1.png"
+      />
+      <StaticCard
+        flexcardTitle="Customer experience"
+        flexcardText="Utilize AI technologies to improve the user experience, cultivating customer loyalty."
+        styles={styles}
+        flexcardImg="/Images/icons/opportunity-2.png"
+      />
+    </div>
   );
 }

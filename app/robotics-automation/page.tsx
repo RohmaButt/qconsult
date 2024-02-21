@@ -1,10 +1,10 @@
 import Breadcrums from "@/shared/components/Breadcrums";
-import StaticCardsBox from "@/shared/components/StaticCardsBox";
 import MainWrapper from "@/shared/components/MainWrapper";
+import RoboticsAutomationSection from "@/shared/components/RoboticsAutomationSection";
 
 const RoboticsAutomation = () => {
   return (
-    <>
+    <div className="flex flex-col mt-64">
       <section>
         <Breadcrums
           title="Robotic Process Automation"
@@ -17,10 +17,17 @@ const RoboticsAutomation = () => {
           blue_color2={true}
         />
       </section>
-      <section className="mt-4 mb-4">
-        <StaticCardsBox />
+      <section className="why-us">
+        <h1>
+          Building robotic processes to automate routine activities such as
+          customer onboarding, KYC, order processing, and more.
+        </h1>
       </section>
-    </>
+      <section className="why-us">
+        <h2>Why us?</h2>
+      </section>
+      <RoboticsAutomationSection />
+    </div>
   );
 };
 

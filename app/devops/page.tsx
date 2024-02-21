@@ -1,11 +1,10 @@
 import MainWrapper from "@/shared/components/MainWrapper";
 import Breadcrums from "@/shared/components/Breadcrums";
-import CardsBox from "@/shared/components/CardsBox";
-import "./style.css";
+import DevOpsSection from "@/shared/components/DevOpsSection";
 
 const DevOps = () => {
   return (
-    <>
+    <div className="flex flex-col mt-64">
       <section>
         <Breadcrums
           title="Cloud DevOps"
@@ -18,13 +17,17 @@ const DevOps = () => {
           blue_color2={true}
         />
       </section>
-      <section>
-        <CardsBox />
+      <section className="why-us">
+        <h1>
+          We design state-of-the-art cloud environments to enable best SDLC
+          practices, increase agility, and streamline workflows.
+        </h1>
       </section>
-      {/* <section>
-        <Mission />
-      </section> */}
-    </>
+      <section className="why-us">
+        <h2 style={{ backgroundColor: "#f5f5f5" }}>Benefits</h2>
+      </section>
+      <DevOpsSection />
+    </div>
   );
 };
 

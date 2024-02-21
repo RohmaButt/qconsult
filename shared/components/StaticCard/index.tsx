@@ -5,7 +5,7 @@ interface StaticCardProps {
   flexcardTitle?: string;
   flexcardText?: string;
   flexcardImg?: string;
-  styles: object;
+  styles?: object;
 }
 
 export const StaticCard: React.FunctionComponent<StaticCardProps> = ({

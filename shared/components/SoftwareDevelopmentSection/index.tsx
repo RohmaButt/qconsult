@@ -1,4 +1,3 @@
-import { ContentCard } from "../ContentCard";
 import { StaticCard } from "../StaticCard";
 
 export default function () {
