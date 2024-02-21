@@ -17,7 +17,7 @@ const RoboticsAutomation = () => {
           blue_color2={true}
         />
       </section>
-      <section>
+      <section className="mt-4 mb-4">
         <StaticCardsBox />
       </section>
     </>

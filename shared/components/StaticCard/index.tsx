@@ -17,11 +17,9 @@ export const StaticCard: React.FunctionComponent<StaticCardProps> = ({
   return (
     <div className="staticflexcard" style={styles}>
       {flexcardImg ? (
-        <img src={flexcardImg} width={100} height={100}></img>
+        <img src={flexcardImg} width={80} height={80}></img>
       ) : null}
-      <div className="flex static-card-flex flexcardTitle">
-        {flexcardTitle}i
-      </div>
+      <div className="flex static-card-flex flexcardTitle">{flexcardTitle}</div>
       <div className="flex static-card-flex flexcardText">{flexcardText}</div>
     </div>
   );

@@ -1,10 +1,10 @@
 import Breadcrums from "@/shared/components/Breadcrums";
-import CardsBox from "@/shared/components/CardsBox";
 import MainWrapper from "@/shared/components/MainWrapper";
+import SoftwareDevelopmentSection from "@/shared/components/SoftwareDevelopmentSection";
 
 const SoftwareDevelopment = () => {
   return (
-    <>
+    <div className="flex flex-col mt-64">
       <section>
         <Breadcrums
           title="Software Development"
@@ -17,13 +17,17 @@ const SoftwareDevelopment = () => {
           blue_color2={false}
         />
       </section>
-      <section>
-        <CardsBox />
+      <section className="why-us">
+        <h1>
+          We develop customized web and mobile applications to fuel business
+          growth within a budget
+        </h1>
       </section>
-      {/* <section>
-        <Mission />
-      </section> */}
-    </>
+      <section className="why-us">
+        <h2>Why Us?</h2>
+      </section>
+      <SoftwareDevelopmentSection />
+    </div>
   );
 };
 

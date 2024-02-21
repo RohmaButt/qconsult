@@ -1,7 +1,6 @@
 import Breadcrums from "@/shared/components/Breadcrums";
 import CoreValuesBox from "@/shared/components/CoreValuesBox";
 import MainWrapper from "@/shared/components/MainWrapper";
-import "./style.css";
 
 const About = () => {
   return (

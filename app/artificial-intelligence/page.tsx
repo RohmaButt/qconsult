@@ -1,5 +1,5 @@
 import Breadcrums from "@/shared/components/Breadcrums";
-import CardsBox from "@/shared/components/CardsBox";
+import ArtificialIntelligenceSection from "@/shared/components/ArtificialIntelligenceSection";
 import MainWrapper from "@/shared/components/MainWrapper";
 
 const ArtificialIntelligence = () => {
@@ -18,11 +18,8 @@ const ArtificialIntelligence = () => {
         />
       </section>
       <section>
-        <CardsBox />
+        <ArtificialIntelligenceSection />
       </section>
-      {/* <section>
-        <Mission />
-      </section> */}
     </>
   );
 };

@@ -16,6 +16,7 @@
 .slider-wrapper {
   margin-top: 74rem;
   cursor: grab;
+  max-height: 60vh;
 }
 
 .mySlides > img {

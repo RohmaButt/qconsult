@@ -8,17 +8,11 @@ import ReactCardSlider from "../ReactCardSlider";
 
 const HomePage = () => {
   return (
-    <>
-      <section>
-        <ReactCardSlider />
-      </section>
-      <section>
-        <CardsBox />
-      </section>
-      <section>
-        <Mission />
-      </section>
-    </>
+    <div className="flex flex-col min-h-screen">
+      <ReactCardSlider />
+      <CardsBox />
+      <Mission />
+    </div>
   );
 };
 

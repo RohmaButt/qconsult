@@ -6,15 +6,14 @@ export default function () {
   const styles = { backgroundColor: "#f5f5f5" };
 
   return (
-    <>
-      <div className="static-title-div">
-        <h2>
-          Building robotic processes to automate routine activities such as
-          customer onboarding, KYC, order processing, and more.
-        </h2>
-        <h3>Why us?</h3>
-      </div>
-      <div className="static-flexbox" style={styles}>
+    // <div className="flex flex-col min-h-screen">
+    <div className="static-cardsbox">
+      <h2>
+        Building robotic processes to automate routine activities such as
+        customer onboarding, KYC, order processing, and more.
+      </h2>
+      <h3>Why us?</h3>
+      <div className="mt-4 mb-4 static-flexbox" style={styles}>
         <StaticCard
           flexcardTitle="Increase Productivity"
           flexcardText="Automate repetitive and rule-based tasks, freeing up human resources to work on strategic initiatives."
@@ -34,7 +33,8 @@ export default function () {
           flexcardImg="/Images/icons/speed-test.png"
         />
       </div>
-      <div className="static-flexbox">
+      <p>Values</p>
+      <div className="mt-4 mb-4 static-flexbox">
         <StaticCard
           flexcardTitle="Cloud DevOps"
           flexcardText="Designing state-of-the-art infrastructure to enable best SDLC practices, increase agility, and streamline workflows"
@@ -51,6 +51,6 @@ export default function () {
           styles={styles}
         />
       </div>
-    </>
+    </div>
   );
 }

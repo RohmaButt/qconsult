@@ -32,3 +32,41 @@ body {
     )
     rgb(var(--background-start-rgb)); */
 }
+
+.core-values > h1 {
+  background-color: #fafeff;
+  padding: 40px;
+  color: #00aeef;
+  font-size: xx-large;
+  font-weight: bolder;
+  text-align: left;
+  padding-left: 13.5%;
+}
+
+.why-us > h1 {
+  padding: 40px 0;
+  align-items: center;
+  color: #333;
+  line-height: 1.4;
+  font-size: larger;
+  text-align: center;
+  font-weight: 550;
+  margin-left: 10%;
+  max-width: 80%;
+}
+
+.why-us > h2 {
+  padding: 40px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.1em;
+  color: #7a7a7a;
+}
+
+.flexbox-images-card {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}

@@ -1,6 +1,7 @@
 .breadcrum-wrapper {
-  margin-top: 26rem;
+  margin-top: 11%;
   cursor: grab;
+  max-height: 60vh;
 }
 
 .slideshow-container {
@@ -11,6 +12,6 @@
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {
-    font-size: 11px;
+    /* font-size: 11px; */
   }
 }
