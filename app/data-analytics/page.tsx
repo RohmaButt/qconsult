@@ -20,8 +20,7 @@ const DataAnalytics = () => {
       <section className="why-us">
         <h1>
           We establish a data-driven culture by democratizing data assets,
-          leading to insights generation and improved decision making across the
-          organization.
+          leading to insights generation and improved decision making.
         </h1>
       </section>
       <section className="why-us">

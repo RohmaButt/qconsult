@@ -1,10 +1,10 @@
 import Breadcrums from "@/shared/components/Breadcrums";
-import CardsBox from "@/shared/components/CardsBox";
+import CareersSection from "@/shared/components/CareersSection";
 import MainWrapper from "@/shared/components/MainWrapper";
 
 const Careers = () => {
   return (
-    <>
+    <div className="flex flex-col mt-64">
       <section>
         <Breadcrums
           title="Careers at Qonsult"
@@ -17,13 +17,14 @@ const Careers = () => {
           blue_color2={false}
         />
       </section>
-      <section>
-        <CardsBox />
+      <section className="why-us">
+        <h1>Empower Your Future: Join Our Team Today!</h1>
       </section>
-      {/* <section>
-        <Mission />
-      </section> */}
-    </>
+      <section className="why-us">
+        <h2>Why Join Us?</h2>
+      </section>
+      <CareersSection />
+    </div>
   );
 };
 
