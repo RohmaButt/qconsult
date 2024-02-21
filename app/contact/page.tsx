@@ -1,13 +1,11 @@
 import Breadcrums from "@/shared/components/Breadcrums";
 import MainWrapper from "@/shared/components/MainWrapper";
-import ContactCardsBox from "@/shared/components/ContactCardsBox";
-import { SignUp } from "@/shared/components/SignUp";
-import CardsBox from "@/shared/components/CardsBox";
-// import "./style.css";
+import ContactSection from "@/shared/components/ContactSection";
+import RoboticsAutomationSection from "@/shared/components/RoboticsAutomationSection";
 
 const Contact = () => {
   return (
-    <>
+    <div className="flex flex-col mt-64">
       <section>
         <Breadcrums
           title="Contact Us"
@@ -20,16 +18,15 @@ const Contact = () => {
           blue_color2={false}
         />
       </section>
-      <section>
-        <ContactCardsBox />
+      <section className="why-us">
+        <h1>Interested in working with us? Email us and we’ll get in touch.</h1>
       </section>
-      {/* <section className="parent-container contact-central-container">
-        <p>Q</p>
-        <div className="form-container">
-          <SignUp />
-        </div>
-      </section> */}
-    </>
+      <section className="why-us">
+        <h2>Contact information</h2>
+      </section>
+      {/*  <RoboticsAutomationSection />*/}
+      <ContactSection />
+    </div>
   );
 };
 

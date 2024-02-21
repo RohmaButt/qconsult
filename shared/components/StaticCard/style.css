@@ -75,3 +75,10 @@ img.flexcardimgItem {
   align-items: center;
   margin-top: 15px;
 }
+
+.staticflexcard a {
+  color: #00aeef;
+  border-radius: 20px;
+  padding: 4px 16px;
+  width: auto;
+}
