@@ -1,7 +1,6 @@
 import Breadcrums from "@/shared/components/Breadcrums";
 import MainWrapper from "@/shared/components/MainWrapper";
 import ContactSection from "@/shared/components/ContactSection";
-import RoboticsAutomationSection from "@/shared/components/RoboticsAutomationSection";
 
 const Contact = () => {
   return (
@@ -24,7 +23,6 @@ const Contact = () => {
       <section className="why-us">
         <h2>Contact information</h2>
       </section>
-      {/*  <RoboticsAutomationSection />*/}
       <ContactSection />
     </div>
   );

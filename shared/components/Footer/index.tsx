@@ -2,7 +2,6 @@
 "use client";
 
 import LocationsBox from "../LocationsBox";
-import { useRouter } from "next/router";
 import { usePathname } from "next/navigation";
 
 import "./style.css";

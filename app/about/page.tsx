@@ -4,7 +4,7 @@ import MainWrapper from "@/shared/components/MainWrapper";
 
 const About = () => {
   return (
-    <>
+    <div className="flex flex-col mt-64">
       <section>
         <Breadcrums
           title="About Us"
@@ -23,7 +23,7 @@ const About = () => {
       <section>
         <CoreValuesBox />
       </section>
-    </>
+    </div>
   );
 };
 

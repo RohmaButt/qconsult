@@ -7,48 +7,28 @@ export default function () {
     <div className="flexbox-images-card">
       <StaticCard
         flexcardTitle="General Queries"
+        flexURLMessage="For general queries, please reach out to us at"
         flexcardText="info@qonsult.ai"
+        flexcardImg="/Images/icons/contact-1.png"
         styles={styles}
         flexIsImageURL={true}
-        flexcardImg="/Images/icons/contact-1.png"
       />
       <StaticCard
         flexcardTitle="Careers"
+        flexURLMessage="For career opportunities, please contact us at "
         flexcardText="careers@qonsult.ai"
+        flexcardImg="/Images/icons/contact-2.png"
         styles={styles}
         flexIsImageURL={true}
-        flexcardImg="/Images/icons/contact-2.png"
       />
       <StaticCard
         flexcardTitle="Sales"
+        flexURLMessage="For inquiries and assistance, contact our sales team at "
         flexcardText="sales@qonsult.ai"
+        flexcardImg="/Images/icons/contact-3.png"
         styles={styles}
         flexIsImageURL={true}
-        flexcardImg="/Images/icons/contact-3.png"
       />
     </div>
   );
 }
-
-//   return (
-//     <>
-//       <div className="flexbox">
-//         <ContactCard
-//           contactCardTitle="Sales"
-//           contactCardImg="/Images/icons/career.png"
-//           contactCardEmail="sales@qonsult.ai"
-//         />
-//         <ContactCard
-//           contactCardTitle="General Queries"
-//           contactCardImg="/Images/icons/question-3.png"
-//           contactCardEmail="info@qonsult.ai"
-//         />
-//         <ContactCard
-//           contactCardTitle="Careers"
-//           contactCardImg="/Images/icons/people-8.png"
-//           contactCardEmail="careers@qonsult.ai"
-//         />
-//       </div>
-//     </>
-//   );
-// }

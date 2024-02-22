@@ -2,6 +2,7 @@
 import React from "react";
 import BreadCrumCard from "../BreadCrumCard";
 import BreadCrumCardProps from "@/shared/types/SharedTypes";
+import { usePathname } from "next/navigation";
 import "./style.css";
 
 const Breadcrums: React.FunctionComponent<BreadCrumCardProps> = ({
@@ -14,8 +15,13 @@ const Breadcrums: React.FunctionComponent<BreadCrumCardProps> = ({
   blue_color1,
   blue_color2,
 }) => {
+  const route = usePathname();
+
   return (
-    <div className="breadcrum-wrapper">
+    <div
+      className="breadcrum-wrapper"
+      style={{ marginTop: route === "/contact" ? "38%" : "11%" }}
+    >
       <div className="slideshow-container">
         <BreadCrumCard
           title={title}
