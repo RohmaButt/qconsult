@@ -57,16 +57,16 @@ export default function Footer() {
             <div className="footer-col">
               <h4>follow us</h4>
               <div className="social-links">
-                <a href="#">
+                <a title='facebook' href="#">
                   <i className="fab fa-facebook-f"></i>
                 </a>
-                <a href="#">
+                <a title='twitter' href="#">
                   <i className="fab fa-twitter"></i>
                 </a>
-                <a href="#">
+                <a title='instagram'href="#">
                   <i className="fab fa-instagram"></i>
                 </a>
-                <a href="#">
+                <a title='linkedin' href="#">
                   <i className="fab fa-linkedin-in"></i>
                 </a>
               </div>

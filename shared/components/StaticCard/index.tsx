@@ -27,7 +27,7 @@ export const StaticCard: React.FunctionComponent<StaticCardProps> = ({
       style={styles}
     >
       {flexcardImg ? (
-        <img src={flexcardImg} width={80} height={80}></img>
+        <img alt='' src={flexcardImg} width={80} height={80}></img>
       ) : null}
       {flexIsImageURL === true ? (
         <>
