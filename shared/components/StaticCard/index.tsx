@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-
 interface StaticCardProps {
   flexcardTitle?: string;
   flexcardText?: string;
