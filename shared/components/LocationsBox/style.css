@@ -110,7 +110,7 @@ body {
     background-image: url("/Images/images/US.jpg");
   }
   &:nth-child(4):before {
-    background-image: url("/aus.jpg");
+    background-image: url("/Images/images/aus.jpg");
   }
 }
 
